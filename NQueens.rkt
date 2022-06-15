@@ -11,6 +11,13 @@
 
 (define P1 0) ;;the top left corner of a board
 (define P2 (- 16 1)) ;;the lower right corner of a 4 x 4 board
-(define P3 (/ 9 2))
+(define P3 (/ 9 2)) ;;the middle of a 3 x 3 board
 
 
+;; Board
+;; Board is a (listof Position)
+;; interpretation:
+;; - the position of queens on the board
+(define B1 empty) ;;there are no queens on the board
+(define B2 (list 0)) ;;queen placed on upper left corner of board
+(define B3 (list 14 8 7 1)) ;;a solution to a 4 x 4 NQueens puzzle
